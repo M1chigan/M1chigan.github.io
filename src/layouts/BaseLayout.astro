@@ -12,7 +12,10 @@ interface Props {
 	description?: string | undefined;
 }
 
-const { title, description } = Astro.props;
+const { 
+  title = 'Emilien Peyon | Portfolio Ingénieur Génie Électrique', 
+  description = 'Portfolio d\'Emilien Peyon : projets en génie électrique, recherche, IA et systèmes embarqués.' 
+} = Astro.props;
 ---
 
 <html lang="en">
