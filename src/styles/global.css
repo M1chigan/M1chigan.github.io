@@ -148,10 +148,23 @@ body {
 
 body {
   background-color: var(--gray-999);
+  /* Chargement du motif de vagues */
+  background-image: url("/assets/backgrounds/waves.svg");
+  background-size: cover;
+  background-position: center top;
+  /* Fixe l'image pour un effet fluide au défilement */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
   color: var(--gray-200);
   font-family: var(--font-body);
   -webkit-font-smoothing: antialiased;
   line-height: 1.5;
+}
+
+/* Assombrit les vagues lorsque le mode sombre est activé */
+:root.theme-dark body {
+  background-blend-mode: multiply;
 }
 
 *,
